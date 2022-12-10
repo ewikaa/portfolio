@@ -3,8 +3,92 @@
 	box-sizing:border-box;
 	font-family:"Montserrat",sans-serif}
 html{font-size:62.5%;scroll-behavior:smooth}
-body{text-align:center;line-height:1.5}
-h1{font-weight:700}
+body{text-align:center;line-height:1.5}	
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+}
+
+.btn-primary:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
+}
+
+/* ............/navbar/............ *
+
+/* desktop mode............/// */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+h1{font-weight:700;}
 p,a{font-size:1.6rem}
 a{text-decoration:none}
 a:hover{transition:all 0.3s ease-in-out}
@@ -104,7 +188,7 @@ width:5rem;height:5rem;margin:1.6rem 1.6rem;transition:all ease 0.2s}
 								#about .about-wrapper__image{padding-bottom:4rem}}
 								#about .about-wrapper__info{display:flex;height:100%;justify-content:center;flex-direction:column;
 									text-align:left}@media (max-width: 48em){
-										#about .about-wrapper__info{align-items:center;text-align:center}}
+										#about .about-wrapper__info{align-items:center;text-align:center: justify-content: space-between;}}
 										#contact{background-image:linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
 											clip-path:polygon(0 15vh, 100% 0, 100% 100%, 0 100%);padding:15rem 0 10rem 0;
 											margin-top:-15rem;margin-bottom:-1px;color:#fff}@media (max-width: 75em){
